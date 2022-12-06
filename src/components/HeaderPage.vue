@@ -54,6 +54,18 @@
             <div class="subtitle">
               For 20 years working with the most innovative in the field of transport.
             </div>
+            <div class="btn-container">
+              <li class="btn"
+              v-for="(link,i) in titleLinks"
+              :key="i"
+              :class="(link.isActive)? 'active-link' : ''"
+            >
+              <a
+                href="#"
+                @click="activateLink(i)"
+              >{{ link.label.toUpperCase() }}</a>
+          </li>
+            </div>
           </div>
           <div class="blue-behind">
           </div>
@@ -72,6 +84,13 @@ export default {
         link.isActive = false;
       });
       this.menuLinks[index].isActive = true;
+    },
+    activateLink(index) {
+      this.titleLinks.forEach((link) => {
+        /* eslint-disable */
+        link.isActive = false;
+      });
+      this.titleLinks[index].isActive = true;
     },
   },
   data() {
@@ -104,9 +123,19 @@ export default {
         },
         {
           label: 'get in touch',
-          isActive: false,
+          isActive: true,
         },
       ],
+      titleLinks: [
+        {
+          label: 'get in touch',
+          isActive: true,
+        },
+        {
+          label: 'read more',
+          isActive: false
+        }
+      ]
     };
   },
 };
@@ -170,8 +199,6 @@ export default {
 
         ul{
           display: flex;
-
-
           li {
             padding: 10px 30px;
             a:visited {
@@ -189,7 +216,7 @@ export default {
           margin-left: auto;
           margin-top: 150px;
           color: white;
-          position: relative;
+          position: absolutew;
           transform: scale(.8);
 
           .content {
@@ -197,11 +224,33 @@ export default {
             z-index: 15;
 
             .title {
-            font-size: 100px;
+            font-size: 110px;
             font-weight: bolder;
+            margin-bottom: 25px;
             }
             .subtitle {
-              font-size: 30px;
+              font-size: 35px;
+            }
+
+            .btn-container {
+              display: flex;
+              justify-content: flex-end;
+              margin-top: 25px;
+              gap: 50px;
+            }
+
+            .btn {
+              padding: 10px 30px;
+              font-size: 25px;
+              border: 2px solid #058283;
+
+            a:visited {
+              color: white;
+            }
+
+            &.active-link {
+              background-color: #058283;
+            }
             }
 
           }

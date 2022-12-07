@@ -68,11 +68,6 @@ export default {
         width: calc(100% / 3);
       }
       .service-left {
-        .small-text {
-          font-size: small;
-          font-weight: 900;
-          color: #00A6A6;
-        }
         .logi-title {
           font-weight: 900;
           font-size: 55px;
@@ -82,7 +77,8 @@ export default {
         }
         .service-left-content {
           font-size: 20px;
-          margin-bottom:25px
+          margin-bottom:25px;
+          color: #4f5050;
         }
         .tag{
           background-color: #CCE3DE;

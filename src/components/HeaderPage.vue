@@ -217,7 +217,7 @@ export default {
           margin-top: 150px;
           color: white;
           position: absolutew;
-          transform: scale(.8);
+          transform: scale(.7);
 
           .content {
             position: absolute;
@@ -225,8 +225,9 @@ export default {
 
             .title {
             font-size: 110px;
-            font-weight: bolder;
-            margin-bottom: 25px;
+            font-weight:900;
+            margin-bottom: 50px;
+            line-height: 100px;
             }
             .subtitle {
               font-size: 35px;

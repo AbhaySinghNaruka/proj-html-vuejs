@@ -31,22 +31,17 @@
           <div class="nav-right">
             <div class="nav">
               <ul>
-                <li
-                  v-for="(link,i) in menuLinks"
-                  :key="i"
-                  :class="(link.isActive)? 'active-link' : 'active-link'"
-                >
-                  <a
-                    href="#"
-                    @click="activateLink(i)"
-                  >{{ link.label.toUpperCase() }}</a>
-                </li>
+                <a href=""><li>HOME</li></a>
+                <a href=""><li>SERVICES</li></a>
+                <a href=""><li>SKILLS</li></a>
+                <a href=""><li>PARTNERS</li></a>
+                <li class="btn btn-touch">GET IN TOUCH</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="get-in-touch">
+        <div class="big-text">
           <div class="content">
             <div class="title">
               Logistics that goes further.
@@ -55,16 +50,12 @@
               For 20 years working with the most innovative in the field of transport.
             </div>
             <div class="btn-container">
-              <li class="btn"
-              v-for="(link,i) in titleLinks"
-              :key="i"
-              :class="(link.isActive)? 'active-link' : 'active-link'"
-            >
-              <a
-                href="#"
-                @click="activateLink(i)"
-              >{{ link.label.toUpperCase() }}</a>
-          </li>
+              <li class="btn btn-touch">
+                GET IN TOUCH
+              </li>
+              <li class="btn btn-read-more">
+                READ MORE
+              </li>
             </div>
           </div>
           <div class="blue-behind">
@@ -77,65 +68,11 @@
 
 <script>
 export default {
-  methods: {
-    activateLink(index) {
-      this.menuLinks.forEach((link) => {
-        /* eslint-disable */
-        link.isActive = false;
-      });
-      this.menuLinks[index].isActive = true;
-    },
-    activateLink(index) {
-      this.titleLinks.forEach((link) => {
-        /* eslint-disable */
-        link.isActive = false;
-      });
-      this.titleLinks[index].isActive = true;
-    },
-  },
   data() {
     return {
       phoneNumber: '+1 (305) 1234-5678',
       email: 'hello@example.com',
       address: 'Main Avenue, 987',
-
-      menuLinks: [
-        {
-          label: 'home',
-          isActive: false,
-          index: 0,
-        },
-        {
-          label: 'services',
-          isActive: false,
-        },
-        {
-          label: 'skills',
-          isActive: false,
-        },
-        {
-          label: 'partners',
-          isActive: false,
-        },
-        {
-          label: 'blog',
-          isActive: false,
-        },
-        {
-          label: 'get in touch',
-          isActive: true,
-        },
-      ],
-      titleLinks: [
-        {
-          label: 'get in touch',
-          isActive: true,
-        },
-        {
-          label: 'read more',
-          isActive: false
-        }
-      ]
     };
   },
 };
@@ -168,6 +105,22 @@ export default {
       }
     }
 
+    .jumbo::after{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: .5;
+      z-index: 0;
+    }
+    .jumbo > * {
+      z-index: 10;
+      position: relative;
+    }
     .jumbo {
       background-image: url('@/assets/img/jumbo.jpg');
       width: 100%;
@@ -175,6 +128,7 @@ export default {
       background-position-y: -260px;
       background-position-x: -100px;
       background-size: 2250px;
+      position: relative;
 
       .jumbo-container {
         width: 61%;
@@ -200,7 +154,7 @@ export default {
           }
         }
         .blue-arrow{
-          color: #05A3A3;
+          color: #058283;
           background-color: rgba(5, 163, 163, 0.2);
           padding: 15px 0px 15px 35px;
           border-top-left-radius: 100%;
@@ -209,25 +163,33 @@ export default {
 
         ul{
           display: flex;
+          a{
+            text-decoration:none;
+          }
           li {
+            color: white;
             padding: 10px 25px;
-            a:visited {
-              color: white;
-            }
-
-            &.active-link {
-              background-color: #058283;
-            }
+          }
+          .btn-touch{
+            background-color:#05A3A3
+          }
+          .btn-touch:hover{
+            background-color: rgba(5, 130, 131,0.2);
+            color: white;
+            border: 1px solid #058283;
           }
         }
 
-        .get-in-touch {
+        .big-text {
           width: 50%;
           margin-left: auto;
           margin-top: 150px;
           color: white;
           position: absolutew;
           transform: scale(.7);
+          a{
+            text-decoration:none;
+          }
 
           .content {
             position: absolute;
@@ -245,23 +207,34 @@ export default {
 
             .btn-container {
               display: flex;
-              justify-content: flex-end;
               margin-top: 25px;
               gap: 50px;
             }
 
-            .btn {
+            .btn-read-more {
               padding: 10px 30px;
               font-size: 25px;
               border: 2px solid #058283;
-
-            a:visited {
               color: white;
-            }
 
-            &.active-link {
-              background-color: #058283;
+              a:visited {
+                color: white;
+              }
+
             }
+            .btn-read-more:hover {
+              background-color:#058283;
+            }
+            .btn-touch {
+              padding: 10px 30px;
+              font-size: 25px;
+              color: white;
+              background-color:#058283;
+            }
+            .btn-touch:hover{
+              background-color: rgba(5, 130, 131,0.2);
+              color: white;
+              border: 1px solid #058283;
             }
 
           }

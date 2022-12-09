@@ -92,6 +92,7 @@ export default {
           color: white;
           transition: .3s;
           cursor: pointer;
+
         }
         .tag:not(:hover){
           background-color:#CCE3DE;
@@ -105,9 +106,10 @@ export default {
           padding: 8px 25px;
         }
         .btn:hover{
-          background-color:#CCE3DE;
+          background-color: rgba(5, 130, 131,0.2);
           color: #058283;
           transition: .3s;
+          border: 1px solid #058283;
         }
       }
       .service-card{

@@ -34,6 +34,9 @@ export default {
         transform: scale(.7);
         filter: opacity(.5);
       }
+      img:hover{
+        cursor: pointer;
+      }
     }
   }
 </style>

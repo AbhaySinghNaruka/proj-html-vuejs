@@ -130,6 +130,7 @@ export default {
                 background-color:#CCE3DE;
                 color: #058283;
                 transition: .3s;
+                border: 1px solid #058283;
             }
 
         }

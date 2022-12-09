@@ -73,7 +73,7 @@ export default {
       margin-bottom:50px
     }
     .button:hover{
-      background-color:#CCE3DE;
+      background-color: rgba(5, 130, 131,0.2);
       color: #058283;
       transition: .3s;
       cursor:pointer;
@@ -103,6 +103,14 @@ export default {
       z-index:10;
       color: white;
       position: relative;
+    }
+    .card-container:hover{
+      transform: scale(1.1);
+      transition: 1s;
+    }
+    .card-container:not(:hover){
+      transform: scale(1);
+      transition: 1s;
     }
     .card-one {
       background-image: url('@/assets/img/news-1.jpg');

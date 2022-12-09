@@ -6,6 +6,7 @@
     <SectionFour />
     <SectionFive />
     <SectionSix />
+    <FooterPage />
   </main>
 
 </template>
@@ -17,6 +18,7 @@ import SectionThree from './SectionThree.vue';
 import SectionFour from './SectionFour.vue';
 import SectionFive from './SectionFive.vue';
 import SectionSix from './SectionSix.vue';
+import FooterPage from './FooterPage.vue';
 
 export default {
   components: {
@@ -26,15 +28,11 @@ export default {
     SectionFour,
     SectionFive,
     SectionSix,
+    FooterPage,
   },
 };
 </script>
 
 <style lang="scss" scoped>
-
-main {
-  height: 4500px;
-
-}
 
 </style>

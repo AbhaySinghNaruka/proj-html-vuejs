@@ -108,6 +108,9 @@ export default {
                     border-radius:5px;
                 }
             }
+            p{
+                margin-bottom: 50px;
+            }
             .my-form-control {
                 margin-bottom: 15px;
                 border-radius: 3px;
@@ -134,6 +137,9 @@ export default {
             width: 40%;
             height: 500px;
             padding: 0 40px;
+            h3{
+                font-weight: 800;
+            }
             .contact-row {
                 display: flex;
                 align-items: center;

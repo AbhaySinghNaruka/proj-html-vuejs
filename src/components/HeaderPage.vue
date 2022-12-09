@@ -26,7 +26,6 @@
         <div class="nav">
           <div class="nav-left">
             <span class="blue-arrow">NEX</span><span class="gen">GEN</span>
-            <span class="nex">NEX</span>
           </div>
 
           <div class="nav-right">
@@ -193,22 +192,16 @@ export default {
           span {
             font-weight: 900;
             letter-spacing: 5px;
-            font-size: 18px;
+            font-size: 25px;
             margin-left: 5px;
-          }
+        }
           .gen {
             color: #C0C3D0;
-          }
-          .nex {
-            position: relative;
-            right: 120px;
-            color: #05A3A3;
           }
         }
         .blue-arrow{
           color: #05A3A3;
-          background-color: #05A3A3;
-          opacity: 30%;
+          background-color: rgba(5, 163, 163, 0.2);
           padding: 15px 0px 15px 35px;
           border-top-left-radius: 100%;
           border-bottom-left-radius: 100%;

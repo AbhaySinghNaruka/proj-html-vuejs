@@ -25,7 +25,8 @@
       <div class="jumbo-container">
         <div class="nav">
           <div class="nav-left">
-            <span class="blue-arrow">NEX</span><span>GEN</span>
+            <span class="blue-arrow">NEX</span><span class="gen">GEN</span>
+            <span class="nex">NEX</span>
           </div>
 
           <div class="nav-right">
@@ -188,19 +189,35 @@ export default {
 
         .nav-left {
           padding-top: 10px;
+          position: relative;
+          span {
+            font-weight: 900;
+            letter-spacing: 5px;
+            font-size: 18px;
+            margin-left: 5px;
+          }
+          .gen {
+            color: #C0C3D0;
+          }
+          .nex {
+            position: relative;
+            right: 120px;
+            color: #05A3A3;
+          }
         }
         .blue-arrow{
-          color: blue;
-          background-color: lightblue;
-          padding: 20px 0px 20px 45px;
-          border-top-left-radius: 50%;
-          border-bottom-left-radius: 50%;
+          color: #05A3A3;
+          background-color: #05A3A3;
+          opacity: 30%;
+          padding: 15px 0px 15px 35px;
+          border-top-left-radius: 100%;
+          border-bottom-left-radius: 100%;
         }
 
         ul{
           display: flex;
           li {
-            padding: 10px 30px;
+            padding: 10px 25px;
             a:visited {
               color: white;
             }

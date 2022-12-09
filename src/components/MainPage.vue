@@ -5,6 +5,7 @@
     <SectionThree />
     <SectionFour />
     <SectionFive />
+    <SectionSix />
   </main>
 
 </template>
@@ -15,6 +16,7 @@ import SectionTwo from '@/components/SectionTwo.vue';
 import SectionThree from './SectionThree.vue';
 import SectionFour from './SectionFour.vue';
 import SectionFive from './SectionFive.vue';
+import SectionSix from './SectionSix.vue';
 
 export default {
   components: {
@@ -23,6 +25,7 @@ export default {
     SectionThree,
     SectionFour,
     SectionFive,
+    SectionSix,
   },
 };
 </script>

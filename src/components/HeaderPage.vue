@@ -35,7 +35,7 @@
                 <li
                   v-for="(link,i) in menuLinks"
                   :key="i"
-                  :class="(link.isActive)? 'active-link' : ''"
+                  :class="(link.isActive)? 'active-link' : 'active-link'"
                 >
                   <a
                     href="#"
@@ -59,7 +59,7 @@
               <li class="btn"
               v-for="(link,i) in titleLinks"
               :key="i"
-              :class="(link.isActive)? 'active-link' : ''"
+              :class="(link.isActive)? 'active-link' : 'active-link'"
             >
               <a
                 href="#"

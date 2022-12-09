@@ -36,12 +36,9 @@ export default {
     font-weight: 900;
     color: #00A6A6;
   }
-
-  .back-color{
-    background-color: #0E272D;
-    border-radius: 5px;
-    padding: 0 15px;
-    margin-right: 10px;
-  }
+  p {
+    font-size: 18px;
+    color: #828282;
+}
 }
 </style>

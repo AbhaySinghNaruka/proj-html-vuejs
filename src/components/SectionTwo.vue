@@ -82,6 +82,12 @@ export default {
       padding: 130px 75px 0px 0px;
       .top {
         margin-bottom: 75px;
+        .back-color{
+          background-color: #0E272D;
+          border-radius: 5px;
+          padding: 0 15px;
+          margin-right: 10px;
+        }
           h1 {
           font-weight: 900;
           font-size: 55px;

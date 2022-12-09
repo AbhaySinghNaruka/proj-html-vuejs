@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="right col-6">
-            <label class="col-12" for="name">
+            <label class="col-12" for="info">
                 <input type="text" placeholder="Name"/>
                 <input type="text" placeholder="Email"/>
             </label>
@@ -56,10 +56,6 @@ export default {
                     border-radius:5px;
                     background-color: #173338;
                     margin-right: 15px;
-                }
-                p {
-                    font-size: 18px;
-                    color: #a3a3a9;
                 }
             }
             .right{
